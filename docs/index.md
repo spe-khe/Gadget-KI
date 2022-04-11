@@ -3,7 +3,7 @@
 
 Die Aufbauanleitung ist hier in Videoform zu finden, oder im folgenden in Textform:
 
-<video src="https://github.com/spe-khe/Gadget-KI/blob/4b1df80fc3ee4b873ee962ea98869e1263815755/Videos/Aufbau.mp4" controls="controls" style="max-width: 730px;">
+<video src="https://media.githubusercontent.com/media/spe-khe/Gadget-KI/4b1df80fc3ee4b873ee962ea98869e1263815755/Videos/Aufbau.mp4" controls="controls" style="max-width: 730px;">
 </video>
 
 Als erstes werden die Widerstände für die LEDs verlötet. dazu müssen zunächst die Beine der Widerstände im passenden Abstand umgebogen werden:
