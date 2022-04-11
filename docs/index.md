@@ -15,7 +15,7 @@ Nun werden die Buchsenleisten für Mikrocontroller und Bewegungsmelder verbaut. 
 
 <img src="assets/images/buch-1.png" style="height:15em">
 
-Die Buchsenleistenfür den Mikrocontroller werden auf diesen aufgesteckt, dann wird das Ganze in die Platine gesteckt:
+Die Buchsenleisten für den Mikrocontroller werden auf diesen aufgesteckt, dann wird das Ganze in die Platine gesteckt:
 
 <img src="assets/images/buch-2.png" style="height:15em">
 
