@@ -1,4 +1,6 @@
 # KI - Gadget
+<div style="padding:1em;border-radius:0.5em;background-color:red">Dieses Repository ist aktuell im Aufbau. Die Aufbauanleitung für das KI-Gadget ist <a href="https://spe-khe.github.io/Gadget-KI/">hier</a> zu finden.</div>
+
 
 In diesem Repository findest du alles, was du für den Aufbau und die Programmierung deines KI-Gadgets brauchst. 
  
