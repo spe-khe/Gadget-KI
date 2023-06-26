@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <title>Einführung Teachable Machine</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+            <h1 id="project_title">KI-Gadget</h1>
+
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+        <section id="main_content" class="inner">
+            <div class="img-text">
+                <div class="block-img">
+                    <img src="assets/images/image005.png">
+                    <img src="assets/images/image006.png">
+                    <img src="assets/images/image007.png">
+                </div>
+                <div class="block-text">
+                    <h2>Kurze Einführung in Teachable Maschine</h2>
+                    Teachable Maschine von Google ermöglicht es schnell und simpel – mit 3 unterschiedlichen Modelltypen
+                    – maschinelles Lernen anzuwenden.
+
+                    Dabei wird kein Konto, Programmierkenntnisse oder Fachwissen vorausgesetzt.
+
+                    <h3>Probieren Sie es einfach aus:</h3>
+                    <ol>
+                        <li>Gehen Sie in einem Browser ihrer Wahl (empfohlen wird ein Laptop oder PC) auf die Webseite:
+                            <a href="https://teachablemachine.withgoogle.com/train">https://teachablemachine.withgoogle.com/train</a></li>
+                        <li>Wählen Sie zwischen einem Bildprojekt, Audioprojekt oder Posenprojekt aus. (Hinweis: Das
+                            ESP32-CAM Modell unterstütz keine Audioprojekte)</li>
+                        <li>Wählen sie das Modell mit Standardbildern aus.</li>
+                        <li>Innerhalb von Class 1 und Class 2 haben Sie die Möglichkeit Trainingsdaten in Form ihrer
+                            Projektwahl anzulegen (bspw. haben Sie ein Bildprojekt ausgewählt können Sie Bilder von
+                            Aktion A aufnehmen oder direkt per Webcam in Class 1 hochladen, dito für Aktion B in Class
+                            2)</li>
+                        <li>Wenn Sie genügend Trainingsdaten hochgeladen haben, sollten Sie noch ihre Aktionen
+                            umbenennen, klicken Sie dafür auf Class 1 und geben Sie ihren Aktionsname ein (auch hier
+                            selbes Prinzip für Class 2)</li>
+                        <li>Um nun das Modell nun auszutesten, drücken Sie auf Modell trainieren, um das Modell zu
+                            trainieren.</li>
+                        <li>Je nachdem, wie viele Aktionen und Bilder Sie das Modell trainieren lassen kann dies eine
+                            Weile dauern (meist ~1-5 min), beachten Sie bitte, dass Sie während dem Trainingsprozess ihr
+                            Fenster nicht minimieren oder ein anderes Programm verwenden sollten.</li>
+                        <li>Wurde das Training erfolgreich beendet sollten Sie nun im Fenster Vorschau die Möglichkeit
+                            haben ihr Modell auszuprobieren.</li>
+                    </ol>
+
+                    <p><i>Wenn Sie merken das ihr Modell nicht richtig funktioniert, probieren Sie es mit mehr
+                            Trainingsdaten zu füttern, und das Modell nochmal neu trainieren zulassen.</i></p>
+                    <p><i>Falls dieses Modell ein Bildprojekt oder Posenprojekt ist und Sie dieses Modell auf dem
+                            ESP32-CAM hochladen möchten, schließen Sie vorerst nicht den Tab.</i></p>
+                </div>
+            </div>
+
+            <div id="navigation">
+                <a href="arduino_setup.html">
+                    <div id="navigation_left" class="nav_prev"><< Einrichtung der Arduino IDE</div>
+                </a>
+                <a href="manual.html">
+                    <div id="navigation_right" class="nav_next">Bedienung >></div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+        <footer class="inner">
+
+            <p class="copyright">Gadget-KI maintained by <a href="https://github.com/spe-khe">spe-khe</a></p>
+
+            <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

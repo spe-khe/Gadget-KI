@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <title>Einrichtung der Arduino IDE</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+            <h1 id="project_title">KI-Gadget</h1>
+
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+        <section id="main_content" class="inner">
+            <div class="img-text">
+                <img class="block-img" src="assets/images/image001.png" alt="Download-Menü der Arduino IDE">
+                <div class="block-text">
+                    <h2>Der ESP32-CAM wird über die Arduino IDE programmiert und gesteuert</h2>
+                    Laden Sie die Arduino IDE herunter
+                    <ol>
+                        <li>Gehen Sie auf <a
+                                href=https://www.arduino.cc/en/software>https://www.arduino.cc/en/software</a></li>
+                        <li>Laden Sie sich die Software für ihr Betriebssystem herunter</li>
+                        <li>Folgen Sie die Anweisungen des Programms für die Installation</li>
+                    </ol>
+                    <h3>Zu beachten:</h3>
+                    Während dem Download werden wichtige Treiber installiert, diese werden benötigt, um auf den
+                    ESP32 zugreifen zu können.
+                </div>
+            </div>
+            <h1>Anpassung einiger Einstellungen</h1>
+            <div class="img-text">
+                <img class="block-img" src="assets/images/image002.png" alt="Einstellungen">
+                <div class="block-text">
+                    <h2>SPRACHEINSTELLUNG IN ARDUINO IDE</h2>
+                    Wenn Sie Arduino IDE auf Deutsch verwenden wollen, führen sie einfach folgende Schritte aus:
+                    <ol>
+                        <li>Arduino IDE öffnen</li>
+                        <li>Drücken Sie im Programm ganz oben rechts, auf File [1] und danach auf Preference… [2]</li>
+                        <li>In den Einstellungen unter Language: Deutsch [3] auswählen</li>
+                        <li>Mit OK bestätigen</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="img-text">
+                <div class="block-img">
+                    <img src="assets/images/image003.png">
+                    <img src="assets/images/image004.png">
+
+                </div>
+                <div class="block-text">
+                    <h2>IN DER ARDUINO IDE DEN ESP32-CAM BOARD INSTALLIEREN</h2>
+                    Um Software auf den ESP32-CAM hochladen zu können, müssen wir diesen einmalig per Board-Manager
+                    hinzufügen:
+                    <ol>
+                        <li>Unter Zusätzliche Boardverwaltung-URLs: [*] fügen Sie diesen Link ein:
+                            <a href="https://dl.espressif.com/dl/package_esp32_index.json">https://dl.espressif.com/dl/package_esp32_index.json</a></li>
+                        <li>Speichern Sie die Einstellungen mit OK.</li>
+                        <li>In der Menü-Leiste klicken Sie auf Werkzeuge > Board > Board-Verwaltung...</li>
+                        <li>Im neu geöffneten Fenster BOARD-VERWALTUNG klicken Sie auf das Textfeld mit Filtern Sie ihre
+                            Suche…</li>
+                        <li>Geben Sie im Textfeld "esp32" ein und installieren Sie die Bibliothek namens „esp32 von
+                            Espressif Systems“</li>
+                        <li>Nach erfolgreicher Installation können Sie nun ihr ESP32-CAM per TTL-Schnittstelle
+                            programmieren.</li>
+                    </ol>
+                </div>
+            </div>
+            
+
+            <h1>Installation der Teachable Maschine Software auf ESP32</h1>
+            <h2>Falls Sie die Software zur Benutzung der ESP32-CAM neuinstallieren müssen</h2>
+
+            <div class="img-text">
+                <div class="block-text">
+                    <h3>Laden Sie den Code für den ESP32-CAM Teachable Maschine herunter</h3>
+                    <ol>
+                        <li> Gehen Sie auf <a href="https://github.com/spe-khe/Gadget-TeachableMachine">https://github.com/spe-khe/Gadget-TeachableMachine</a></li>
+                        <li> Klicken Sie auf den grünen Code-Button und drücken Sie dann auf "Download Zip"</li>
+                        <li> Öffnen Sie die heruntergelade Zip-Datei und entpacken Sie diese (mit den Rechtsklick auf den
+                            ZIP Ordner und dann auf "Alle extrahieren…" klicken)</li>
+                        <li> Ein neues Fenster mit gleichnamigem Ordner sollte sich öffnen – klicken Sie auf dieses und
+                            öffnen Sie den Ordner SPE_Tensflow_ESP32-Cam. Die dort liegende .ino Datei öffnen Sie
+                            mit einem Doppelklick.</li>
+                    </ol>
+
+                    <h3>Konfiguration anpassen</h3>
+                    <p>Die Software benötigt Internetzugriff und muss sich in ein ihm bekanntes Netzwerk anmelden, um
+                        sein Dashboard per WLAN freizugeben.</p>
+                    <p>Ersetzen Sie in der Arduino IDE ab Zeile 44 "WLAN_NAME_HIER_EINGEBEN" und geben Sie den Namen
+                        ihres WLAN-Routers an. Auch benötigt wird das Passwort von ihrem Router / AP - ersetzten Sie "WLAN_PASSWORT_HIER_EINGEBEN" (Zeile 45) dadurch.</p>
+                    <img src="assets/images/image009.png">
+                    <p>Zur Wiedererkennung des ESP32 und für die erleichterte Benutzung des ESP32-CAM ohne Anschluss an
+                        Arduino IDE können Sie dem ESP-32 einen Namen geben. Diesen können Sie in Zeile 48, statt "V2-ESP"
+                        ersetzen.</p>
+                    <p>Optimal können Sie im Feld "SICHERES_PASSWORT_EINGEBEN" noch ein Passwort setzen.</p>
+                </div>
+            </div>
+
+            <div class="img-text">
+                <div class="block-img">
+                    <img src="assets/images/image011.png">
+                    <img src="assets/images/image010.png">
+                </div>
+                <div class="block-text">
+                    <h2>Programm auf den ESP32-CAM Hochladen</h2>
+                    <p>Wenn Sie die Konfigurationen abgeschlossen haben, stecken Sie eine Steckbrücke auf die Stiftleiste J1 am Gadget (im Bild oben)
+                        und verbinden Sie das Gerät per USB an ihren PC / Laptop.</p>
+                    <p>In Arduino IDE finden Sie oben rechts die Schaltfläche "Board auswählen". Klicken Sie auf diese und
+                        drücken Sie auf "Wähle ein anderes Board und einen anderen Port".</p>
+                    <p><i>Falls ihnen ein Port mit einer COM-Verbindung angezeigt wird, können sie diesen auswählen
+                            und den unteren Schritt überspringen.</i></p>
+                </div>
+            </div>
+
+            <div class="img-text">
+                <div class="block-img">
+                    <img src="assets/images/image012.jpg">
+                </div>
+                <div class="block-text">
+                    <p>Wählen Sie im Fenster "Anderes Board und Ports wählen" Unter "BOARDS" den "AI Thinker ESP32-CAM"
+                        und unter PORTS ihren verfügbaren Serial Port (USB) aus.</p>
+                    <p>Zuletzt müssen Sie nur noch mit OK die Einstellungen speichern.</p>
+                    <p>Der ESP32-CAM sollte nun erkannt und startklar für den Upload sein.</p>
+                </div>
+            </div>
+
+            <div class="img-text">
+                <div class="block-img">
+                    <img src="assets/images/image014.png">
+                </div>
+                <div class="block-text">
+                    <p>Mit einem Klick auf den Uploadknopf, können Sie nun die Software auf den Mikrokontroller
+                        hochladen.</p>
+                    <p>Wenn Arduino IDE die Software ohne Probleme kompiliert hat, sollte sich ein Konsolenfenster
+                        öffnen, in welchem Sie den Fortschritt vom Hochladen sehen sollten.</p>
+                    <p><i>Falls dort „Connecting….…._____...._____....“ angezeigt wird (und kein Fortschritt zu erkennen
+                            ist) drücken Sie auf der Rückseite des ESP32 den Knopf (aus dem Bild zu entnehmen) einmal
+                            und probieren Sie das Hochladen erneut. Sollte sich der ESP32-CAM nochmal dort verhangen und
+                            ein Time out erzeugen, dann prüfen Sie die Brücke über dem TXD-Anschluss (Bild 1) ob diese
+                            richtig angeschlossen ist.</i></p>
+                    <p>War der Download erfolgreich meldet die Konsole:</p>
+                    <code>Leaving… <br>Hard resetting via RTS pin…</code>
+                    <p>Entfernen Sie nun die zuvor angesteckte Brücke.</p>
+                    <h3>Das Programm ist nun auf dem Mikrocontroller einsatzbereit.</h3>
+                </div>
+            </div>
+
+            <div id="navigation">
+                <a href="index.html">
+                    <div id="navigation_left" class="nav_prev"><< Aufbau</div>
+                </a>
+                <a href="teachable.html">
+                    <div id="navigation_right" class="nav_next">Einführung Teachable Machine >></div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+        <footer class="inner">
+
+            <p class="copyright">Gadget-KI maintained by <a href="https://github.com/spe-khe">spe-khe</a></p>
+
+            <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

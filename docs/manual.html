@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <title>Bedienung</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+            <h1 id="project_title">KI-Gadget</h1>
+
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+        <section id="main_content" class="inner">
+            <div class="img-text">
+                <div class="block-text">
+                    <h2>Wie starte ich den Mikrocontroller?</h2>
+                    Wenn das Hochladen erfolgreich war, und die (Programmier-)Brücke entfernt wurde, reicht eine (5V-)USB-Stromzufuhr völlig
+                    aus. Sie können das Programm starten und neu starten in dem Sie auf den auf der vorherigen Seite gezeigten Knopf hinten
+                    am Mikrocontroller drücken.
+                </div>
+            </div>
+            <div class="img-text">
+                <div class="block-img">
+                    <img src="assets/images/image015.png">
+                    <img src="assets/images/image016.jpg">
+                </div>
+                <div class="block-text">
+                    <h2>Starten mit Zusatzinfos über die Arduino IDE</h2>
+                    <p>Wir empfehlen generell den Mikrocontroller an dem Laptop / PC mit der Arduino IDE Software zu verwenden.</p>
+                    <p>Unter Werkzeuge > Serieller Monitor können Sie beim Benutzen des Gerätes nützliche Infos auslesen.
+                    Bei Ersteinrichtung müssen Sie außerdem eine sogenannte Baudrate angeben, wählen Sie im Dropdownmenü hier die Option 115200 baud.
+                    Starten Sie nun ihren Mikrocontroller per Knopf auf der Rückseite neu.</p>
+                    <p>Sie sollten nun Meldungen zu Infos und Fehlern erhalten.</p>
+                </div>
+            </div>
+            <div class="img-text">
+                <div class="block-text">
+                    <h2>Zugriff auf das esp32-CAM Dashboard</h2>
+                    Wenn Sie den Mikrocontroller mit dem Seriellen Monitor benutzen können Sie die IP-Adresse auf dem sich das Dashboard befinden unter <code>Local Address:</code> auslesen.
+                    Alternativ können Sie auch mit einem Handy nach einem neuen WLAN-Netzwerk mit dem von Ihnen gesetzten Namen suchen, der Name des Netzwerks endet in der gesuchten IP-Adresse.
+                    <p><i>Falls der ESP32-CAM es nach zwei Versuchen nicht geschafft hat sich in das ihm genannten WLAN-Netzwerk zu verbinden
+                        blinkt seine LED langsam. Prüfen Sie dann bitte ihre Eingaben für den Zugriff zum Netzwerk.</i></p>
+                    Befindet sich beide Geräte (Mikrocontroller UND ihr PC / Laptop) im selben Netzwerk, können Sie nun mit einem Browser über die ausgelesene IP-Adresse auf das Dashboard zugreifen.
+                </div>
+            </div>
+            <div class="img-text">
+                <div class="block-img">
+                    <img src="assets/images/image017.jpg">
+                </div>
+                <div class="block-text">
+                    <h2>Teachable Machine Dashboard</h2>
+                    Das Dashboard enthält folgende Aktionen:
+                    <ul>
+                        <li>Restart: Falls das Dashboard Probleme aufweist, einfriert oder anderweitig nicht funktioniert – Drücken Sie den Restart-Knopf um den Mikrocontroller neu zu starten.<br>
+                        (Dies dauert meist weniger als 1 Minute, bis das Dashboard wieder erreichbar ist)</li>
+                        <li>Kind: Mit diesem Dropdown Menü wählen Sie aus welchen Modelltyp Sie auf Teachable Maschine trainiert haben.<br>
+                        (Da der ESP32-CAM kein Mikrofon besitzt können Sie nur Posen oder Bilderprojekte verwenden.)</li>
+                        <li>Model Path: In diesem Feld wird die URL ihres hochgeladen Modells eingegeben (genaueres siehe unten).</li>
+                        <li>Flash (optional): Ermöglicht es mithilfe einer LED, die Umgebung heller zu beleuchten.</li>
+                        <li>Resolution (optional): Ermöglicht es, die Kamera mit mehr Auflösung zu betreiben - auf Kosten der Geschwindigkeit und Stabilität.</li>
+                        <li>Quality (optional): Gibt die Qualität der Bilder an, je geringer desto besser die Qualität.<br>
+                        (Bei großen Modellen kann aber eine hohe Qualität den ESP32-CAM zum Abstürzen bringen)</li>
+                        <li>Brightness / Contrast (optional): Ändert die Helligkeit bzw. den Kontrast der Bilder ab</li>
+                        <li>H-Mirror / V-Flip (optional): Spiegelt das Bild vertikal oder horizontal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img-text">
+                <div class="block-img">
+                    <img src="assets/images/image018.png">
+                    <img src="assets/images/image020.png">
+                </div>
+                <div class="block-text">
+                    <h2>Teachable Maschine Modell auf dem Dashboard verwenden</h2>
+                    <p>Wenn Sie ein Pose/Bildmodell bereits trainiert haben, können Sie das Modell auf ihrem ESP32-CAM laufen lassen. Gehen Sie dazu im Browser auf ihre bereits trainiertes Teachable Maschine Modell und klicken Sie im Vorschau Fenster auf "Modell exportieren".</p>
+                    <p>Im Fenster "Dein Modell zur Verwendung in Projekten exportieren", klicken Sie auf "Mein Modell hochladen".</p>
+                    <p>Nach ein paar Minuten sollte ein Link erscheinen.</p>
+                    <p>Kopieren Sie diesen und fügen Sie die URL in das Textfeld "Model Path" im Dashboard ein.</p>
+                    <p>Drücken Sie dann auf "Start Recognition". Unter den Einstellungen wird nun angezeigt, welche Klassen des Modells mit welcher Wahrscheinlichkeit erkannt werden.</p>
+                </div>
+            </div>
+
+            <div id="navigation">
+                <a href="teachable.html">
+                    <div id="navigation_left" class="nav_prev"><< Einführung Teachable Maschine</div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+        <footer class="inner">
+
+            <p class="copyright">Gadget-KI maintained by <a href="https://github.com/spe-khe">spe-khe</a></p>
+
+            <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
